@@ -1,0 +1,12 @@
+body {
+    background-color: bisque;
+}
+
+
+#btn:hover {
+    background-color: coral;
+}
+
+.giphy {
+    display:none;
+}
