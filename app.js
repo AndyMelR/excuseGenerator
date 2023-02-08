@@ -8,7 +8,7 @@ window.onload = () => {
 
 let generateExcuse = () => {
   let who = ["The dog", "My grandma", "His turtle", "My bird"];
-  const superWho = [{ id: "dog", src: "https://giphy.com/embed/7792CoU4eXuoM" }, { id: "turtle", src: "https://giphy.com/embed/j0RqBdOYVkzJJzJDoo" }, { id: "grandma", src: "https://giphy.com/embed/jQAWv2kZe3hXA97PTu" }, { id: "bird", src: "https://giphy.com/embed/X6Sm6CdSosJnJVa1tV" }];
+  const superWho = [{ id: "My dog", src: "https://giphy.com/embed/7792CoU4eXuoM" }, { id: "My turtle", src: "https://giphy.com/embed/j0RqBdOYVkzJJzJDoo" }, { id: "My grandma", src: "https://giphy.com/embed/jQAWv2kZe3hXA97PTu" }, { id: "My bird", src: "https://giphy.com/embed/X6Sm6CdSosJnJVa1tV" }];
 
   let action = ["ate", "peed", "crushed", "broke"];
   let what = ["my homework", "the keys", "the car"];
@@ -30,6 +30,8 @@ let generateExcuse = () => {
 
 
   let message = `${superWho[whoIndex].id}  ${action[actionIndex]}  ${what[whatIndex]}  ${when[whenIndex]}`;
+  console.log(superWho[whoIndex]);
+ // <iframe src="https://giphy.com/embed/DeAIC76F52wqk" width="360" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/bear-farts-DeAIC76F52wqk">via GIPHY</a></p>
 
 
   return message;
