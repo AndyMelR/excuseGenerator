@@ -2,6 +2,7 @@ window.onload = () => {
   //write your code here
   document.querySelector("#btn").addEventListener("click", () => {
     document.querySelector("#my_excuse").innerHTML = generateExcuse();
+    document.getElementById("animation").src = superWho[whoIndex].src;
   });
 
 };
@@ -25,11 +26,7 @@ let generateExcuse = () => {
   let whatIndex = Math.floor(Math.random() * what.length);
   let whenIndex = Math.floor(Math.random() * when.length);
 
-
-  document.getElementById("animation").src = superWho[whoIndex].src;
-
-
- return `${superWho[whoIndex].id}  ${action[actionIndex]}  ${what[whatIndex]}  ${when[whenIndex]}`;
+  return `${superWho[whoIndex].id}  ${action[actionIndex]}  ${what[whatIndex]}  ${when[whenIndex]}`;
 
 };
 
