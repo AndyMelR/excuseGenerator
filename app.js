@@ -29,12 +29,8 @@ let generateExcuse = () => {
   document.getElementById("animation").src = superWho[whoIndex].src;
 
 
-  let message = `${superWho[whoIndex].id}  ${action[actionIndex]}  ${what[whatIndex]}  ${when[whenIndex]}`;
-  console.log(superWho[whoIndex]);
- // <iframe src="https://giphy.com/embed/DeAIC76F52wqk" width="360" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/bear-farts-DeAIC76F52wqk">via GIPHY</a></p>
+ return `${superWho[whoIndex].id}  ${action[actionIndex]}  ${what[whatIndex]}  ${when[whenIndex]}`;
 
-
-  return message;
 };
 
 
