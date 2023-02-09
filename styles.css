@@ -24,7 +24,9 @@ h1 {
  }
     
   
-
+button, .from {
+    font-family: 'Montserrat', sans-serif;
+}
 
 #btn:hover {
     background-color: coral;
