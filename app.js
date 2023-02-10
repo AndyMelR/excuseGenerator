@@ -28,16 +28,23 @@ function getArrayLength(array) {
 function getRandomOption(excuseOptions) {
   return Math.floor(Math.random() * getArrayLength(excuseOptions));
 }
-
-function generateExcuse(whoIndex, actionIndex, whatIndex, whenIndex) {
-  whoIndex = getRandomOption(who);
-  actionIndex = getRandomOption(action);
-  whatIndex = getRandomOption(what);
-  whenIndex = getRandomOption(when);
-
+function setAnimationSource(whoIndex) {
   document.getElementById("animation").src = superWho[whoIndex].src;
+}
+
+function setExcuseMessage(whoIndex, actionIndex, whatIndex, whenIndex) {
   return `${superWho[whoIndex].id}  ${action[actionIndex]}  ${what[whatIndex]}  ${when[whenIndex]}`;
-};
+}
+
+function generateExcuse() {
+  let whoIndex = getRandomOption(who);
+  let actionIndex = getRandomOption(action);
+  let whatIndex = getRandomOption(what);
+  let whenIndex = getRandomOption(when);
+
+  setAnimationSource(whoIndex);
+  return setExcuseMessage(whoIndex, actionIndex, whatIndex, whenIndex);
+}
 
 executeProgram();
 
