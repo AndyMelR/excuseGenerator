@@ -1,3 +1,4 @@
+executeProgram();
 
 function executeProgram() {
   window.onload = () => {
@@ -46,7 +47,7 @@ function generateExcuse() {
   return setExcuseMessage(whoIndex, actionIndex, whatIndex, whenIndex);
 }
 
-executeProgram();
+
 
 
 
